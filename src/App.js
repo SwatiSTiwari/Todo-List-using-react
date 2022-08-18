@@ -11,7 +11,7 @@ function App() {
     setCurrentItem(e.target.value);
   };
   const addItemsToList = () => {
-    updateItemList([...itemList, { item: currentItem, key: Date.now }]);
+    updateItemList([...itemList, { item: currentItem, key: Date.now() }]);
     // console.lof("list items", itemList);
     setCurrentItem("");
   };
